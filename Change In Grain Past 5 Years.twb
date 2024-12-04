@@ -1,0 +1,1049 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='FoodImports (1)' inline='true' name='federated.1ihmh1h10rh69z17kk45f1w1obr3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FoodImports (1)' name='excel-direct.0f4dnf51ok8sns13ka1xv078txzx'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/sahil/OneDrive/Documents/My Tableau Repository/Datasources/FoodImports (1).xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='integer' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2019]' />
+            <value name='[2020]' />
+            <value name='[2021]' />
+            <value name='[2022]' />
+            <value name='[2023]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Grains].[2019]' />
+              <field name='[Grains].[2020]' />
+              <field name='[Grains].[2021]' />
+              <field name='[Grains].[2022]' />
+              <field name='[Grains].[2023]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.0f4dnf51ok8sns13ka1xv078txzx' name='Grains' table='[Grains$]' type='table'>
+            <columns gridOrigin='A1:AC72:no:A1:AC72:1' lost='0' outcome='1' processed='1456'>
+              <column datatype='string' name='F1' ordinal='0' />
+              <column datatype='integer' name='F2' ordinal='1' />
+              <column datatype='string' name='F3' ordinal='2' />
+              <column datatype='string' name='F4' ordinal='3' />
+              <column datatype='real' name='2023' ordinal='4' />
+              <column datatype='real' name='2022' ordinal='5' />
+              <column datatype='real' name='2021' ordinal='6' />
+              <column datatype='real' name='2020' ordinal='7' />
+              <column datatype='real' name='2019' ordinal='8' />
+              <column datatype='real' name='2018' ordinal='9' />
+              <column datatype='real' name='2017' ordinal='10' />
+              <column datatype='real' name='2016' ordinal='11' />
+              <column datatype='real' name='2015' ordinal='12' />
+              <column datatype='real' name='2014' ordinal='13' />
+              <column datatype='real' name='2013' ordinal='14' />
+              <column datatype='real' name='2012' ordinal='15' />
+              <column datatype='real' name='2011' ordinal='16' />
+              <column datatype='real' name='2010' ordinal='17' />
+              <column datatype='real' name='2009' ordinal='18' />
+              <column datatype='real' name='2008' ordinal='19' />
+              <column datatype='real' name='2007' ordinal='20' />
+              <column datatype='real' name='2006' ordinal='21' />
+              <column datatype='real' name='2005' ordinal='22' />
+              <column datatype='real' name='2004' ordinal='23' />
+              <column datatype='real' name='2003' ordinal='24' />
+              <column datatype='real' name='2002' ordinal='25' />
+              <column datatype='real' name='2001' ordinal='26' />
+              <column datatype='real' name='2000' ordinal='27' />
+              <column datatype='real' name='1999' ordinal='28' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AC72:no:A1:AC72:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>1456</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2018</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2018]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2018</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2017</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2017]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2017</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2016</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2016]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2016</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2015</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2014</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2013]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2013</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2012</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2012]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2012</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2011</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2011]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2011</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2010</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2010]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2010</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2009</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2009]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2009</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2008</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2008]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2008</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2007</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2007]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2007</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2006</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2006]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2006</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2005</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2005]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2005</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2004</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2004]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2004</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2003</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2003]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2003</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2002</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2002]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2002</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2001</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2001]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2001</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2000]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>2000</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1999</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[1999]</local-name>
+            <parent-name>[Grains]</parent-name>
+            <remote-alias>1999</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[1999]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2000]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2001]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2002]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2003]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2004]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2005]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2006]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2007]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2008]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2009]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2010]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2011]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2012]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2013]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2014]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2015]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2016]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2017]' role='measure' type='quantitative' />
+      <column datatype='real' name='[2018]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[F3]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='Grains' datatype='table' name='[__tableau_internal_object_id__].[Grains_AE04FBF427074C08B42117A76100BD08]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Grains_AE04FBF427074C08B42117A76100BD08]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Grains_AE04FBF427074C08B42117A76100BD08:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F3]' derivation='None' name='[none:F3:nk]' pivot='key' type='nominal' />
+      <column-instance column='[1999]' derivation='Sum' name='[sum:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2000]' derivation='Sum' name='[sum:2000:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2001]' derivation='Sum' name='[sum:2001:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2002]' derivation='Sum' name='[sum:2002:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2003]' derivation='Sum' name='[sum:2003:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Sum' name='[sum:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2005]' derivation='Sum' name='[sum:2005:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2006]' derivation='Sum' name='[sum:2006:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2007]' derivation='Sum' name='[sum:2007:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2008]' derivation='Sum' name='[sum:2008:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Sum' name='[sum:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2010]' derivation='Sum' name='[sum:2010:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2011]' derivation='Sum' name='[sum:2011:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2012]' derivation='Sum' name='[sum:2012:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2013]' derivation='Sum' name='[sum:2013:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Sum' name='[sum:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2015]' derivation='Sum' name='[sum:2015:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2016]' derivation='Sum' name='[sum:2016:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2017]' derivation='Sum' name='[sum:2017:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2018]' derivation='Sum' name='[sum:2018:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2001 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2017 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[__tableau_internal_object_id__].[cnt:Dairy_9FD469C8C5FB4587BEF694227FA74A67:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[__tableau_internal_object_id__].[cnt:Grains_AE04FBF427074C08B42117A76100BD08:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[max:2022:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[min:2022:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2005 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2022:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2001 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2020:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2021 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2023 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2003:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2011:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2013 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2002:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2016 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2000 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2000:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2020 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2007 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2008:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2017:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2004 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:F2 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2005:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2007:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2009 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2015:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[__tableau_internal_object_id__].[cnt:Prices_97E68026DB814A8B8137DE235FDB4DD8:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:1999 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2000 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2019 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2003 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2012 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2012:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2006:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2011 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2013:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2005 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2007 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2008 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2016:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2006 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2008 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2018:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[avg:Average inflation:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[cnt:Average inflation:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2015 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2021:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:Average inflation:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2019:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2001:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2018 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[ctd:2023:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[min:2023:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2003 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2023 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2023:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2004 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2006 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2010 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2002 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2010:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2014 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:1999 (Meats):qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2002 (Dairy):qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:2022 (Dairy):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:F3:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;World (quantity)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rest of world&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;World&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Grains' id='Grains_AE04FBF427074C08B42117A76100BD08'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='integer' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2019]' />
+                  <value name='[2020]' />
+                  <value name='[2021]' />
+                  <value name='[2022]' />
+                  <value name='[2023]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Grains].[2019]' />
+                    <field name='[Grains].[2020]' />
+                    <field name='[Grains].[2021]' />
+                    <field name='[Grains].[2022]' />
+                    <field name='[Grains].[2023]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.0f4dnf51ok8sns13ka1xv078txzx' name='Grains' table='[Grains$]' type='table'>
+                  <columns gridOrigin='A1:AC72:no:A1:AC72:1' lost='0' outcome='1' processed='1456'>
+                    <column datatype='string' name='F1' ordinal='0' />
+                    <column datatype='integer' name='F2' ordinal='1' />
+                    <column datatype='string' name='F3' ordinal='2' />
+                    <column datatype='string' name='F4' ordinal='3' />
+                    <column datatype='real' name='2023' ordinal='4' />
+                    <column datatype='real' name='2022' ordinal='5' />
+                    <column datatype='real' name='2021' ordinal='6' />
+                    <column datatype='real' name='2020' ordinal='7' />
+                    <column datatype='real' name='2019' ordinal='8' />
+                    <column datatype='real' name='2018' ordinal='9' />
+                    <column datatype='real' name='2017' ordinal='10' />
+                    <column datatype='real' name='2016' ordinal='11' />
+                    <column datatype='real' name='2015' ordinal='12' />
+                    <column datatype='real' name='2014' ordinal='13' />
+                    <column datatype='real' name='2013' ordinal='14' />
+                    <column datatype='real' name='2012' ordinal='15' />
+                    <column datatype='real' name='2011' ordinal='16' />
+                    <column datatype='real' name='2010' ordinal='17' />
+                    <column datatype='real' name='2009' ordinal='18' />
+                    <column datatype='real' name='2008' ordinal='19' />
+                    <column datatype='real' name='2007' ordinal='20' />
+                    <column datatype='real' name='2006' ordinal='21' />
+                    <column datatype='real' name='2005' ordinal='22' />
+                    <column datatype='real' name='2004' ordinal='23' />
+                    <column datatype='real' name='2003' ordinal='24' />
+                    <column datatype='real' name='2002' ordinal='25' />
+                    <column datatype='real' name='2001' ordinal='26' />
+                    <column datatype='real' name='2000' ordinal='27' />
+                    <column datatype='real' name='1999' ordinal='28' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Change In Amount of Grain Imported by The United States In The Past 5 Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FoodImports (1)' name='federated.1ihmh1h10rh69z17kk45f1w1obr3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ihmh1h10rh69z17kk45f1w1obr3'>
+            <column caption='Country' datatype='string' name='[F3]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+            <column caption='Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[F3]' derivation='None' name='[none:F3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:F3:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F3:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:F3:nk]' member='&quot;World&quot;' />
+                <groupfilter function='member' level='[none:F3:nk]' member='&quot;World (quantity)&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:nk]'>
+            <groupfilter function='level-members' level='[none:Pivot Field Names:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:Pivot Field Values:qk]' value='60' />
+            <encoding attr='space' class='0' field='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:qk]' field-type='quantitative' max='2023' min='2019' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:F3:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:qk]</cols>
+      </table>
+      <simple-id uuid='{C3C7DA74-A8E6-4766-BB08-D60518D637EC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:F3:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[:Measure Names]</field>
+            <field>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:F2:nk]</field>
+            <field>[federated.1ihmh1h10rh69z17kk45f1w1obr3].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{772C9F68-7D6E-40CA-8369-C0DDFCD6D941}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
